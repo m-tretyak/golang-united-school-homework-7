@@ -32,8 +32,7 @@ func testPanic(testFunc func()) (errMsg interface{}, isPanic bool) {
 	return nil, false
 }
 
-//NOSONAR
-func TestPeople_Len(t *testing.T) {
+func TestPeople_Len(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		People
 		expected int
@@ -73,8 +72,7 @@ func TestPeople_Len(t *testing.T) {
 	}
 }
 
-//NOSONAR
-func TestPeople_Swap(t *testing.T) {
+func TestPeople_Swap(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		People
 		i, j    int
@@ -146,8 +144,7 @@ func TestPeople_Swap(t *testing.T) {
 	}
 }
 
-//NOSONAR
-func TestPeople_Less(t *testing.T) {
+func TestPeople_Less(t *testing.T) { //NOSONAR
 	unix0 := time.Unix(0, 0)
 	cases := map[string]struct {
 		People
@@ -231,8 +228,7 @@ func TestPeople_Less(t *testing.T) {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-//NOSONAR
-func TestMatrix_New(t *testing.T) {
+func TestMatrix_New(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		input         string
 		expected      *Matrix
@@ -298,8 +294,7 @@ func TestMatrix_New(t *testing.T) {
 	}
 }
 
-//NOSONAR
-func TestMatrix_Rows(t *testing.T) {
+func TestMatrix_Rows(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		input    string
 		expected *[][]int
@@ -348,8 +343,7 @@ func TestMatrix_Rows(t *testing.T) {
 	}
 }
 
-//NOSONAR
-func TestMatrix_Cols(t *testing.T) {
+func TestMatrix_Cols(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		input    string
 		expected *[][]int
@@ -398,8 +392,7 @@ func TestMatrix_Cols(t *testing.T) {
 	}
 }
 
-//NOSONAR
-func TestMatrix_Set(t *testing.T) {
+func TestMatrix_Set(t *testing.T) { //NOSONAR
 	cases := map[string]struct {
 		row, col, value int
 		matrix          *Matrix
