@@ -32,6 +32,7 @@ func testPanic(testFunc func()) (errMsg interface{}, isPanic bool) {
 	return nil, false
 }
 
+//NOSONAR
 func TestPeople_Len(t *testing.T) {
 	cases := map[string]struct {
 		People
@@ -72,6 +73,7 @@ func TestPeople_Len(t *testing.T) {
 	}
 }
 
+//NOSONAR
 func TestPeople_Swap(t *testing.T) {
 	cases := map[string]struct {
 		People
@@ -144,6 +146,7 @@ func TestPeople_Swap(t *testing.T) {
 	}
 }
 
+//NOSONAR
 func TestPeople_Less(t *testing.T) {
 	unix0 := time.Unix(0, 0)
 	cases := map[string]struct {
@@ -228,7 +231,7 @@ func TestPeople_Less(t *testing.T) {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
+//NOSONAR
 func TestMatrix_New(t *testing.T) {
 	cases := map[string]struct {
 		input         string
@@ -295,6 +298,7 @@ func TestMatrix_New(t *testing.T) {
 	}
 }
 
+//NOSONAR
 func TestMatrix_Rows(t *testing.T) {
 	cases := map[string]struct {
 		input    string
@@ -344,6 +348,7 @@ func TestMatrix_Rows(t *testing.T) {
 	}
 }
 
+//NOSONAR
 func TestMatrix_Cols(t *testing.T) {
 	cases := map[string]struct {
 		input    string
@@ -393,6 +398,7 @@ func TestMatrix_Cols(t *testing.T) {
 	}
 }
 
+//NOSONAR
 func TestMatrix_Set(t *testing.T) {
 	cases := map[string]struct {
 		row, col, value int
